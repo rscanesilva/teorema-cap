@@ -1,4 +1,4 @@
 # Estudo sobre o Teorema CAP
 ---
 
-![alt text](cap.png "Teorema CAP")
+![alt text](theorem-cap.png "Teorema CAP")
