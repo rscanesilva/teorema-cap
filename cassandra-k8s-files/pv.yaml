@@ -1,0 +1,72 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cassandra-pv1
+spec:
+  storageClassName: local-storage-cassandra
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/storage/csdata1"
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cassandra-pv2
+spec:
+  storageClassName: local-storage-cassandra
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/storage/csdata2"
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cassandra-pv3
+spec:
+  storageClassName: local-storage-cassandra
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/storage/csdata3"
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cassandra-pv4
+spec:
+  storageClassName: local-storage-cassandra
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/storage/csdata4"
+
+--- 
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cassandra-pv5
+spec:
+  storageClassName: local-storage-cassandra
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/storage/csdata5"
